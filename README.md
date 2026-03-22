@@ -1,7 +1,5 @@
 # Projeto EBOOK Gerado por IAs
 
-Este repositorio deixou de ser apenas um PDF com um resumo dos prompts usados. Agora ele funciona como um kit pratico para criar, organizar e publicar ebooks com apoio de IA.
-
 O projeto combina:
 
 - um exemplo real de ebook sobre seletores CSS
@@ -83,13 +81,3 @@ Os testes cobrem:
 - renderizacao Markdown
 - renderizacao HTML
 
-## Por que isso melhora o projeto
-
-Em vez de mostrar apenas o resultado final, o repositorio agora mostra processo, estrutura e reaproveitamento. Isso deixa o projeto mais forte para GitHub, estudos e portfolio, porque fica claro como a IA entrou no fluxo e como o material pode ser reproduzido.
-
-## Proximos passos
-
-- adicionar exportacao para DOCX ou PDF
-- criar temas visuais para landing pages de ebook
-- gerar paginas de venda e posts de divulgacao a partir do mesmo JSON
-- adicionar validacao de estilo editorial
