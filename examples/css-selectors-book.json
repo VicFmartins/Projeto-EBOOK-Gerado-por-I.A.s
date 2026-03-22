@@ -1,0 +1,64 @@
+{
+  "title": "Dominando Seletores CSS",
+  "subtitle": "Um guia pratico para estilizar interfaces com mais clareza",
+  "author": "Vic F. Martins",
+  "audience": "Estudantes e desenvolvedores iniciantes em front-end",
+  "theme": "CSS",
+  "tone": "Didatico e objetivo",
+  "cover_prompt": "Crie uma capa de ebook moderna sobre CSS, com atmosfera espacial, tipografia forte, tons de azul e ciano, interface futurista e destaque para a frase Dominando Seletores CSS.",
+  "call_to_action": "Revise seu projeto atual, identifique onde voce esta usando seletores excessivamente genericos e reescreva pelo menos tres trechos com mais clareza e contexto.",
+  "chapters": [
+    {
+      "title": "Seletores basicos que voce realmente usa",
+      "objective": "Entender os seletores mais comuns para ganhar fluidez no dia a dia.",
+      "key_points": [
+        "Seletores por elemento sao bons para estruturas simples.",
+        "Classes ajudam a reutilizar estilos sem acoplar ao HTML especifico.",
+        "IDs devem ser usados com moderacao para evitar rigidez."
+      ],
+      "code_example_title": "Estilizando cards de produto",
+      "code_example_language": "css",
+      "code_example": ".product-card {\n  border: 1px solid #dbe2ea;\n  padding: 16px;\n}\n\n.product-card h2 {\n  margin-bottom: 8px;\n}\n\n#featured-product {\n  border-color: #0ea5e9;\n}",
+      "summary": "Com esses seletores basicos, voce ja cobre boa parte das interfaces comuns sem complicar o CSS."
+    },
+    {
+      "title": "Combinadores para estilizar com contexto",
+      "objective": "Aprender a selecionar elementos pela relacao entre eles.",
+      "key_points": [
+        "O combinador de descendencia seleciona elementos dentro de outro bloco.",
+        "O combinador filho evita estilizar niveis inesperados.",
+        "Irmaos adjacentes e gerais ajudam em formularios e listas."
+      ],
+      "code_example_title": "Melhorando um formulario",
+      "code_example_language": "css",
+      "code_example": ".signup-form label {\n  font-weight: 600;\n}\n\n.signup-form > input {\n  display: block;\n  margin-bottom: 12px;\n}\n\ninput + small {\n  color: #64748b;\n}",
+      "summary": "Quando o contexto importa, os combinadores deixam o estilo mais preciso e evitam efeitos colaterais."
+    },
+    {
+      "title": "Pseudo-classes para estados reais da interface",
+      "objective": "Aplicar estilos que respondem ao comportamento do usuario.",
+      "key_points": [
+        "Use :hover e :focus para feedback visual imediato.",
+        "Use :first-child e :last-child para ajustes finos em listas.",
+        "Estados como :disabled ajudam a comunicar a regra da interface."
+      ],
+      "code_example_title": "Botoes com feedback",
+      "code_example_language": "css",
+      "code_example": ".cta-button:hover {\n  background: #0284c7;\n}\n\n.cta-button:focus {\n  outline: 3px solid #bae6fd;\n}\n\n.plan-card:last-child {\n  margin-bottom: 0;\n}",
+      "summary": "Pseudo-classes aproximam o CSS do comportamento real da interface e melhoram a experiencia do usuario."
+    },
+    {
+      "title": "Atributos e boas praticas para CSS escalavel",
+      "objective": "Usar seletores de atributo com criterio e manter o codigo legivel.",
+      "key_points": [
+        "Seletores por atributo funcionam bem em formularios e componentes reutilizaveis.",
+        "Evite especificidade desnecessaria para facilitar manutencao.",
+        "Nomear classes com clareza vale mais do que truques complexos."
+      ],
+      "code_example_title": "Campos por tipo",
+      "code_example_language": "css",
+      "code_example": "input[type=\"email\"] {\n  border-color: #38bdf8;\n}\n\nbutton[aria-expanded=\"true\"] {\n  background: #082f49;\n  color: #f8fafc;\n}\n\n[data-status=\"warning\"] {\n  color: #b45309;\n}",
+      "summary": "Seletores poderosos sao mais uteis quando aparecem em uma base organizada, previsivel e facil de manter."
+    }
+  ]
+}
